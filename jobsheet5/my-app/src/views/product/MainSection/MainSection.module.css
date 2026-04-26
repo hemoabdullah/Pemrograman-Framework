@@ -1,0 +1,25 @@
+.mainSection {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid #d8e0f0;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.heading {
+  margin: 0;
+  color: #1a3a70;
+}
+
+.description {
+  color: #506796;
+}
+
+.list {
+  margin: 12px 0 0;
+  color: #2e446f;
+}
+
+.list li {
+  margin: 8px 0;
+}

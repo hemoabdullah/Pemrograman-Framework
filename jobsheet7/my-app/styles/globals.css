@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1b2a4e;
+  background:
+    radial-gradient(circle at top left, rgba(255, 176, 106, 0.24), transparent 34%),
+    radial-gradient(circle at top right, rgba(120, 169, 255, 0.25), transparent 40%),
+    linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell,
+.productsWrapper {
+  width: min(100%, 980px);
+  margin: 42px auto;
+  border: 1px solid #d9e2f5;
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 34px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  color: #4d659f;
+}
+
+h1 {
+  margin: 12px 0 0;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.subtitle {
+  color: #586c96;
+  max-width: 70ch;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 999px;
+  padding: 0 16px;
+  font-weight: 600;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button.primary {
+  color: #fff;
+  background: linear-gradient(135deg, #2f58c7, #4d7cf0);
+}
+
+.button.secondary {
+  color: #2f58c7;
+  border: 1px solid #b5c6ed;
+  background: #f5f8ff;
+}
+
+.productsHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.statusText {
+  margin-top: 12px;
+  color: #4e638f;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #dce4f7;
+  border-radius: 18px;
+  padding: 16px;
+  background: #fcfdff;
+}
+
+.badge {
+  margin: 0;
+  display: inline-flex;
+  border-radius: 999px;
+  background: #e9efff;
+  color: #2d58c6;
+  min-height: 28px;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.card h2 {
+  margin: 10px 0 0;
+  font-size: 1.16rem;
+}
+
+.price {
+  margin-top: 8px;
+  color: #223760;
+  font-weight: 700;
+}

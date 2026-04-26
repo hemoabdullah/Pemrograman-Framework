@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a2a4b;
+  background:
+    radial-gradient(circle at top left, rgba(251, 187, 126, 0.2), transparent 34%),
+    radial-gradient(circle at top right, rgba(131, 180, 255, 0.23), transparent 38%),
+    linear-gradient(180deg, #f8fbff 0%, #edf3ff 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  width: min(100%, 980px);
+  margin: 36px auto;
+  border-radius: 22px;
+  border: 1px solid #d8e1f3;
+  background: #ffffff;
+  padding: 30px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.75rem;
+  color: #4a639e;
+}
+
+h1 {
+  margin: 10px 0 0;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.subtitle {
+  max-width: 72ch;
+  line-height: 1.7;
+  color: #556892;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  min-height: 44px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  font-weight: 600;
+}
+
+.button.primary {
+  color: #fff;
+  background: linear-gradient(135deg, #2f58c7, #4e7df0);
+}
+
+.button.secondary {
+  border: 1px solid #c5d2f1;
+  color: #2f58c7;
+  background: #f7f9ff;
+}
+
+.statusText {
+  color: #4b6190;
+}

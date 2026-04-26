@@ -1,0 +1,35 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #d8e0f0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.inner {
+  min-height: 68px;
+  width: min(100%, 1024px);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.links a {
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: #25324a;
+}
+
+.links a:hover {
+  background: #e6edff;
+}

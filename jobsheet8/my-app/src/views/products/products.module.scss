@@ -1,0 +1,152 @@
+.wrapper {
+  width: min(100%, 1060px);
+  margin: 38px auto;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid #d9e1f2;
+  padding: 26px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: #3f61a0;
+}
+
+.title {
+  margin: 10px 0 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  color: #132a56;
+}
+
+.subtitle {
+  margin-top: 12px;
+  color: #556894;
+  line-height: 1.7;
+}
+
+.refreshButton {
+  min-height: 44px;
+  border-radius: 999px;
+  border: 0;
+  background: linear-gradient(135deg, #2e57c6, #4b79ed);
+  color: #fff;
+  font-weight: 600;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.refreshButton:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+.status {
+  color: #405f95;
+  margin-top: 10px;
+}
+
+.error {
+  color: #b3252f;
+  margin-top: 10px;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border-radius: 18px;
+  border: 1px solid #dce4f5;
+  background: #fefeff;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__content {
+  padding: 14px;
+}
+
+.card__category {
+  margin: 0;
+  display: inline-flex;
+  min-height: 27px;
+  border-radius: 999px;
+  padding: 0 10px;
+  align-items: center;
+  background: #e8efff;
+  color: #2f58c7;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.card__name {
+  margin: 10px 0 0;
+  color: #203a6c;
+  font-size: 1.06rem;
+}
+
+.card__price {
+  margin: 8px 0 0;
+  font-weight: 700;
+  color: #111f3f;
+}
+
+.skeleton {
+  border-radius: 10px;
+  animation: blink 1.2s ease-in-out infinite;
+  background: linear-gradient(90deg, #e9edf7 25%, #f4f7fd 37%, #e9edf7 63%);
+  background-size: 300% 100%;
+}
+
+.skeletonImage {
+  width: 100%;
+  height: 180px;
+}
+
+.skeletonText {
+  margin-top: 10px;
+  width: 54%;
+  height: 18px;
+}
+
+.skeletonTextWide {
+  margin-top: 10px;
+  width: 88%;
+  height: 22px;
+}
+
+.skeletonTextShort {
+  margin-top: 10px;
+  width: 44%;
+  height: 18px;
+}
+
+@keyframes blink {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}
